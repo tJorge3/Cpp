@@ -16,24 +16,11 @@ int main (){
 
     cout <<nome <<"\n"<< endereco <<"\n" <<telefone << endl;
     cout <<"Digite 'Sim' ou 'Nao'" <<"\n";
-    cout <<"Os dados estao corretos?";
+    cout <<"Os dados estao corretos?" << endl;
     cin >> validar;
     }
-    while 
-        (if (validar == "Nao") {
-        cout <<"Por favor, digite o seu nome: ";
-        cin >> nome;
-        cout <<"Por favor digite o seu endereco (No formato Rua - Bairro - Cidade): ";
-        cin >> endereco;
-        cout <<"Por favor digite o seu telefone: ";
-        cin >> telefone;
-        
-    }
-    
-    else if ((validar != "Sim") && (validar != "Nao")) {
-        cout <<"Resposta invalida";
-        
-    }
+    while (validar == "Nao");
+    cout << "Dados cadastrados";
 
     return 0;
 }
